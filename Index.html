@@ -26,17 +26,17 @@
           >Lern<span class="header_logo_it">IT</span></a
         >
         <div class="header_score-wrap">
-          <p class="header_score">Score:0</p>
+          <!-- <p class="header_score">Score:0</p> -->
         </div>
       </div>
     </header>
     <main>
-      <section class="zero-section">
+      <section class="zero-section" id="section-0">
         <div class="zero-chapter-wrap conatainer">
           <h1 class="chapter-header">
             Саме тут почнеться вивчення основ JavaScript
           </h1>
-          <div class="section-text-wrap">
+          <div class="section-wrap">
             <p>Ласкаво просимо до вивчення основ JavaScript!</p>
             <p>
               Тут ти знайдеш усе необхідне для твого успішного поглиблення в
@@ -49,14 +49,14 @@
             </p>
             <p>Удачі тобі!</p>
           </div>
-          <button type="button" class="zero-butt" id="zero-butt">
+          <button type="button" class="main-button" id="zero-butt">
             Починаймо!
           </button>
         </div>
       </section>
-      <section class="first-section">
+      <section class="first-section" id="section-1">
         <div class="conatainer visually-hidden" id="first-section">
-          <div class="section-text-wrap">
+          <div class="section-wrap">
             <h2 class="section-header">Section #1</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
@@ -97,12 +97,99 @@
               Reprehenderit dolor repellendus eius exercitationem nostrum
               dolores natus. Veniam culpa possimus aliquid aspernatur!
             </p>
+            <div id="test" class="quiz-wrap"></div>
+            <button type="submit" id="button" class="main-button check-button">
+              Перевірити
+            </button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, consectetur inventore laborum nam officiis nobis nemo
+              eos totam vitae ab, eum est sequi doloribus eveniet quidem cum
+              eligendi harum sed? Officia ducimus possimus atque, quod nulla
+              explicabo? Labore voluptatum nulla culpa neque ex pariatur placeat
+              tempora suscipit fugiat maxime quidem ipsam architecto doloribus
+              ipsa ab exercitationem, officia asperiores tenetur eligendi.
+              Consequuntur maiores reprehenderit incidunt itaque inventore minus
+              dolorem labore veritatis omnis minima laudantium deleniti, magnam,
+              quis error accusantium quisquam autem, odit ratione velit vero
+              reiciendis debitis nesciunt? Laborum, libero asperiores. Molestiae
+              vero sint quidem tempora ab placeat voluptate quibusdam maiores
+              hic error ducimus, earum ullam ea itaque consequatur nemo dolorum?
+              Cupiditate, officiis sit quod quo neque consectetur. Non, quod
+              corrupti.
+            </p>
+            <div class="test-wrap">
+              <form class="quiz-form" id="quizForm">
+                <fieldset class="quiz-fieldset">
+                  <div class="quiz-wrap-set">
+                    <p>
+                      1. Яка мова програмування використовується для розробки
+                      веб-сайтів?
+                    </p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="True" checked />
+                      Java</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="True" />
+                      Python</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="true" />
+                      JavaScript</label
+                    >
+                  </div>
+
+                  <div class="quiz-wrap-set">
+                    <p>2. Що означає абревіатура HTML?</p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="true" checked />
+                      HyperText Markup Language</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="True" /> High-level
+                      Text Modeling Language</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="True" /> Hyperlink
+                      and Text Markup Language</label
+                    >
+                  </div>
+
+                  <div class="quiz-wrap-set">
+                    <p>3. Якій країні належить мова програмування Ruby?</p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="true" checked />
+                      Японія</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="True" /> Сполучені
+                      Штати Америки</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="True" />
+                      Канада</label
+                    >
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <button
+              type="submit"
+              onclick="submitQuiz('quizForm')"
+              class="main-button check-button"
+            >
+              Перевірити
+            </button>
+            <button type="button" class="main-button" id="first-butt">
+              До наступного блоку
+            </button>
           </div>
         </div>
       </section>
-      <section class="second-section">
-        <div class="container">
-          <div class="section-text-wrap">
+      <section class="second-section" id="section-2">
+        <div class="container visually-hidden" id="second-section">
+          <div class="section-wrap">
             <h2 class="section-header">Section#2</h2>
             <p>
               Lorem ipsum dojlor sit amet consectetur, adipisicing elit. Tenetur
@@ -142,53 +229,102 @@
               beatae praesentium maxime sapiente laboriosam eveniet vitae aut
               exercitationem a, eos in sed numquam impedit.
             </p>
-          </div>
-          <div class="test-wrap">
-            <p>Text#1</p>
-            <form class="test-form">
-              <fieldset class="form-group">
-                <legend class="group-title">I want to receive</legend>
-                <div class="form-field">
-                  <input
-                    type="checkbox"
-                    name="newsletter"
-                    value="weekly"
-                    id="weekly"
-                  />
-                  <label class="form-label" for="weekly"
-                    >The weekly newsletter</label
-                  >
-                </div>
-                <div class="form-field">
-                  <input
-                    type="checkbox"
-                    name="newsletter"
-                    value="offers"
-                    id="offers"
-                  />
-                  <label class="form-label" for="offers"
-                    >Offers from the company</label
-                  >
-                </div>
-                <div class="form-field">
-                  <input
-                    type="checkbox"
-                    name="newsletter"
-                    value="associated_offers"
-                    id="associated_offers"
-                  />
-                  <label class="form-label" for="associated_offers"
-                    >Offers from associated companies</label
-                  >
-                </div>
-                <button type="submit">Sumbiit</button>
-              </fieldset>
-            </form>
+            <div type="button" class="quiz-wrap" id="test_1"></div>
+            <button id="button1" class="main-button check-button">
+              Перевірити
+            </button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              cupiditate exercitationem sit officiis fuga error mollitia
+              accusantium nesciunt inventore, cum repudiandae, libero sequi
+              quibusdam eaque laudantium! Sunt repellat in omnis? Similique
+              nihil accusantium tenetur fuga dolorem id quasi excepturi quos eum
+              vero atque suscipit nesciunt, numquam veniam reiciendis ea iste
+              pariatur quas nemo deleniti vel unde sed asperiores. Consequuntur,
+              maxime! Autem eos nihil iste beatae natus? Officia esse ea, sit,
+              in quod a repudiandae facere corrupti dolores eaque quaerat amet
+              est voluptates dicta. Repudiandae similique minima eligendi natus
+              qui aliquid! Veniam voluptatibus sint enim qui mollitia tempore
+              molestiae commodi nemo eum aliquid repellendus dignissimos
+              explicabo quisquam, corporis, quod modi. Consectetur voluptas quis
+              dolor delectus sapiente corporis culpa? Dolore, error assumenda.
+              Facere impedit consequuntur dignissimos reprehenderit inventore.
+              Similique exercitationem qui quos repellendus obcaecati, expedita
+              voluptate necessitatibus sunt rem aliquam aut temporibus nostrum
+              dignissimos dolorum illo quasi architecto impedit reiciendis nihil
+              beatae?
+            </p>
+            <div class="test-wrap">
+              <form class="quiz-form" id="quizForm1">
+                <fieldset class="quiz-fieldset">
+                  <div class="quiz-wrap-set">
+                    <p>
+                      1. Яка мова програмування використовується для розробки
+                      веб-сайтів?
+                    </p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="True" checked />
+                      Java</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="True" />
+                      Python</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q1" value="true" />
+                      JavaScript</label
+                    >
+                  </div>
+
+                  <div class="quiz-wrap-set">
+                    <p>2. Що означає абревіатура HTML?</p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="true" checked />
+                      HyperText Markup Language</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="True" /> Мова
+                      високого рівня для моделювання тексту</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="True" />
+                      Гіперпосилання та мова розмітки тексту</label
+                    >
+                  </div>
+
+                  <div class="quiz-wrap-set">
+                    <p>3. Якій країні належить мова програмування Ruby?</p>
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="true" checked />
+                      Японія</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="True" /> Сполучені
+                      Штати Америки</label
+                    >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q3" value="True" />
+                      Канада</label
+                    >
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <button
+              type="button"
+              onclick="submitQuiz('quizForm1')"
+              class="main-button check-button"
+            >
+              Перевірити
+            </button>
+            <button type="button" class="main-button" id="module-butt">
+              Почати модальний контроль
+            </button>
           </div>
         </div>
       </section>
     </main>
     <footer></footer>
-    <script src="./js/js.js"></script>
+    <script src="./js/js.js" defer></script>
   </body>
 </html>
