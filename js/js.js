@@ -17,7 +17,7 @@ document.getElementById("module-butt").addEventListener("click", function () {
 });
 let questions1 = [
   {
-    text: "Скорочена назва таблиці стилів?",
+    text: "Скорочена  назва таблиці стилів?",
     right: "CSS",
   },
   {
