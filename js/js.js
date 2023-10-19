@@ -14,6 +14,11 @@ document.getElementById("module-butt").addEventListener("click", function () {
   document.getElementById("section-0").classList.add("visually-hidden");
   document.getElementById("section-1").classList.add("visually-hidden");
   document.getElementById("section-2").classList.add("visually-hidden");
+  document.getElementById("section-3").classList.remove("visually-hidden");
+  window.scrollBy({
+    top: -1500,
+    behavior: "smooth",
+  });
 });
 let questions1 = [
   {
@@ -99,14 +104,11 @@ function submitQuiz(formId) {
   questions.forEach((question) => {
     let selectedOption = question.querySelector("input:checked");
 
-    if (selectedOption) {
-      ///!!!!!!!!!!!!!!!!!!!!!!!!1
-      if (selectedOption.value === "true") {
-        score++;
-        question.classList.add("correct");
-      } else {
-        question.classList.add("incorrect");
-      }
+    if (selectedOption.value === "true") {
+      score++;
+      question.classList.add("correct");
+    } else {
+      question.classList.add("incorrect");
     }
 
     let inputs = question.querySelectorAll("input");
@@ -116,8 +118,17 @@ function submitQuiz(formId) {
     let callingButton = event.currentTarget;
     callingButton.disabled = true;
   });
+  document.getElementById("score").innerHTML = "SCORE: " + score;
+}
+/*=============================Модульний================================ */
+document.getElementById("module-check").addEventListener("click", function () {
+  document.getElementById("modal-section").classList.add("is-open");
+});
 
-  // Display or use the score as needed
-  // alert(`Your score is: ${score} out of ${questions.length}`);
-  alert(`Your score is: ${score} out of 1555`);
+document.getElementById("close-modal").addEventListener("click", function () {
+  document.getElementById("modal-section").classList.remove("is-open");
+});
+function reload() {
+  score = 0;
+  location.reload();
 }
