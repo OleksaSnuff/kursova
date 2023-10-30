@@ -3,6 +3,9 @@ body {
   color: #434455;
   background-color: #fff;
   scroll-behavior: smooth;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 p,
@@ -133,7 +136,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: #f4f4fd;
   font-size: 26px;
   font-weight: 500;
@@ -149,12 +152,32 @@ ul {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
+.img {
+  width: 100%;
+  margin: 15px 0;
+}
+.code {
+  background-color: #282a36;
+  color: #f4f4fd;
+  border-radius: 6px;
+  /* text-align: c; */
+  padding-top: 10px;
+  padding-left: 25px;
+}
+.block-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
 /*================================Тест-text===================================*/
 .quiz-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  margin: 15px 0;
+}
+.quiz-wrap > div {
+  margin-left: 200px;
 }
 .test-button {
   display: inline-block;

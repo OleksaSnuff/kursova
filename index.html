@@ -25,16 +25,14 @@
         <a href="" class="header_logo"
           >Lern<span class="header_logo_it">IT</span></a
         >
-        <div class="header_score-wrap">
-          <!-- <p class="header_score">Score:0</p> -->
-        </div>
+        <div class="header_score-wrap"></div>
       </div>
     </header>
     <main>
       <section class="zero-section" id="section-0">
         <div class="zero-chapter-wrap conatainer">
           <h1 class="chapter-header">
-            Саме тут почнеться вивчення основ JavaScript
+            Саме тут почнеться вивчення основ JavaScript!
           </h1>
           <div class="section-wrap">
             <p>Ласкаво просимо до вивчення основ JavaScript!</p>
@@ -43,11 +41,10 @@
               програмуванні. Кожна тема супроводжується невеликим тестом, що
               допоможе закріпити твої знання.<br />
               Не бійся помилок — це нормально. Вони тобі лише допоможуть стати
-              кращим програмістом. Не забувай експериментувати та творити власні
-              проекти. Це ключ до успіху!<br />
-              Бажаємо тобі найкращого у своєму подорожі JavaScript!
+              кращим. Вивчати щось нове це завжди добре. Це тівй ключ до
+              успіху!<br />
+              Бажаємо тобі успіхів у вивченні JavaScript!
             </p>
-            <p>Удачі тобі!</p>
           </div>
           <button type="button" class="main-button" id="zero-butt">
             Починаймо!
@@ -57,118 +54,250 @@
       <section class="first-section" id="section-1">
         <div class="conatainer visually-hidden" id="first-section">
           <div class="section-wrap">
-            <h2 class="section-header">Section #1</h2>
+            <h2 class="section-header">Section #1 Змінні</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              corporis debitis itaque eveniet obcaecati dolorum sint ipsam
-              doloribus officiis saepe veritatis vel, enim ea impedit, sunt
-              assumenda? Laborum, velit debitis! Animi magnam aliquid, facilis
-              magni iure debitis voluptates maiores optio libero cum saepe quam
-              officiis unde? Maiores aliquid in facilis repellat, vero eum
-              soluta architecto ab non molestiae. Qui, deserunt. Reprehenderit,
-              esse! Voluptates rem quisquam alias non mollitia dolor delectus
-              culpa, sed accusantium veritatis nobis in voluptatem neque.
-              Repellendus delectus voluptate optio earum ad quasi, ipsum
-              mollitia similique cupiditate est. Asperiores veniam delectus iste
-              libero, obcaecati quod. Rem tempora maiores optio aliquam illum
-              totam, illo exercitationem sint obcaecati officia non veniam
-              molestias suscipit possimus ratione nobis laborum? Pariatur,
-              maiores animi. Exercitationem possimus quia distinctio, fuga
-              veritatis mollitia esse nisi voluptas alias nesciunt pariatur
-              consequatur maiores ullam, sint eum, assumenda doloremque dolor
-              incidunt. Nisi dolore culpa ipsum animi pariatur dolorem
-              voluptatibus! Est quas esse perspiciatis assumenda. Ratione ea
-              laborum aperiam sunt. Velit neque architecto blanditiis, corrupti
-              delectus impedit accusamus vitae eius, eum dolorum harum! Nemo est
-              commodi dolorem quae animi facere. Ut sunt aperiam delectus vero
-              architecto veritatis eaque odio a necessitatibus dignissimos
-              optio, numquam minima nisi commodi cumque aspernatur dicta
-              similique magnam ab. Doloribus maiores obcaecati mollitia ducimus
-              magnam odit. Eligendi molestias veniam, dignissimos necessitatibus
-              tempore fugiat illum, alias dolores cum voluptatum ipsam
-              accusantium! Delectus sed in magnam omnis voluptates tempora ea,
-              provident illo assumenda quia sit atque magni ullam? Illo in eos
-              deserunt rem dignissimos! Quibusdam minima accusantium, cumque
-              labore iste expedita error nihil voluptatibus ducimus, quam
-              ratione inventore laboriosam asperiores sint repudiandae
-              distinctio ipsum cupiditate, excepturi quaerat at. Voluptatem
-              incidunt perferendis modi soluta dolorum deserunt inventore, totam
-              debitis, odio sequi ex eius quod voluptatibus libero.
-              Reprehenderit dolor repellendus eius exercitationem nostrum
-              dolores natus. Veniam culpa possimus aliquid aspernatur!
+              JavaScript (або скорочено JS) — це повноцінна динамічна мова
+              програмування, яка застосовується до HTML документу та може
+              забезпечити динамічну взаємодію на веб-сайтах. Її розробив Брендан
+              Айк, співзасновник проекту Mozilla, Mozilla Foundation та Mozilla
+              Corporation.
             </p>
+            <img src="./img/javascript.webp" alt="" class="img" />
+            <p>
+              JavaScript неймовірно універсальний і дружелюбний до новачків. З
+              великим досвідом ви зможете створювати ігри, анімовану 2D і 3D
+              графіку, повномасштабні додатки з базами даних та багато іншого!
+            </p>
+            <p>
+              JavaScript сам по собі досить компактний, і при цьому дуже
+              гнучкий. Розробниками написано велику кількість інструментів
+              поверх основної мови JavaScript, які розблоковують велику
+              кількість додаткових функцій з дуже невеликими зусиллями.
+            </p>
+            <h2 class="block-header">Змінні</h2>
+            <p>
+              Змінні — це контейнери, всередині яких ви можете зберігати
+              значення. Ви розпочинаєте з того, що оголошуєте змінну за
+              допомогою ключового слова var (не рекомендується, продовжуйте
+              читати, щоб отримати пояснення) або let, за яким слідує будь-яке
+              ім'я, яким ви захочете її назвати:
+            </p>
+            <p class="code">let myVariable;</p>
+            <p>
+              Тепер можна помістити в неї дані (іншими словами, визначити
+              змінну), використовуючи оператор присвоєння = :
+            </p>
+            <p class="code">
+              myVariable = "Bob";<br />або ж написати код компактніше <br />var
+              myVariable = "Bob";
+            </p>
+            <p>
+              Після визначення значення змінної ви можете змінити його пізніше:
+            </p>
+            <p class="code">myVariable = 'Steve';</p>
+            <p>Тепер змінна myVariable містить таке значення 'Steve'</p>
             <div id="test" class="quiz-wrap"></div>
             <button type="submit" id="button" class="main-button check-button">
               Перевірити
             </button>
+            <h2 class="block-header">Типи даних</h2>
+            <img
+              src="./img/1_l_ZDRMLFUVaIO38p9Qkzvw.jpg"
+              alt="types of data"
+              class="img"
+            />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, consectetur inventore laborum nam officiis nobis nemo
-              eos totam vitae ab, eum est sequi doloribus eveniet quidem cum
-              eligendi harum sed? Officia ducimus possimus atque, quod nulla
-              explicabo? Labore voluptatum nulla culpa neque ex pariatur placeat
-              tempora suscipit fugiat maxime quidem ipsam architecto doloribus
-              ipsa ab exercitationem, officia asperiores tenetur eligendi.
-              Consequuntur maiores reprehenderit incidunt itaque inventore minus
-              dolorem labore veritatis omnis minima laudantium deleniti, magnam,
-              quis error accusantium quisquam autem, odit ratione velit vero
-              reiciendis debitis nesciunt? Laborum, libero asperiores. Molestiae
-              vero sint quidem tempora ab placeat voluptate quibusdam maiores
-              hic error ducimus, earum ullam ea itaque consequatur nemo dolorum?
-              Cupiditate, officiis sit quod quo neque consectetur. Non, quod
-              corrupti.
+              <b>String</b><br />Послідовність тексту, відома як рядок. Щоб
+              вказати, що це значення є рядком, ви повинні обгорнути його
+              лапками.
             </p>
+            <p class="code">var myVariable = 'Bob';</p>
+            <p>
+              <b>Number</b><br />
+              Числа. Числа не мають лапок навколо них.
+            </p>
+            <p class="code">var myVariable = 10;</p>
+            <p>
+              <b>Boolean</b><br />
+              Значення True (Правда)/False (Брехня). Слова true і false — це
+              спеціальні ключові слова в JS і не потребують лапок.
+            </p>
+            <p class="code">var myVariable = true;</p>
+            <p>
+              <b>Array</b><br />
+              Масив, який дозволяє зберігати кілька значень в одному посиланні.
+            </p>
+            <p class="code">var myVariable = [1, 'Bob', 'Steve', 10];</p>
+            <p>
+              Звертатися до кожного елементу масиву можна так: myVariable[0],
+              myVariable[1], і так далі.
+            </p>
+            <p>
+              <b>Object</b><br />
+              В принципі, все що завгодно. Все в JavaScript є об'єктом і може
+              бути збережено у змінній. Майте це на увазі, поки ви вивчаєте.
+            </p>
+            <p class="code">var myVariable = document.querySelector('h1');</p>
+            <p>Все з раніше наведених прикладів.</p>
+            <h2 class="block-header">Оператори в мові JavaScript</h2>
+            <img
+              src="./img/javascript-operators.png"
+              alt="javascript operators"
+              class="img"
+            />
+            <p>
+              <b>Додавання(конкантинація)</b><br />Використовується для
+              додавання двох чисел або рядків<br />
+              Символ: +
+            </p>
+            <p class="code">
+              6 + 9;<br />
+              "Hello " + "world!";
+            </p>
+            <p>
+              <b>Віднімання, множення, ділення</b><br />Використовується як і в
+              класичній математиці
+              <br />
+              Символи: -,*,/
+            </p>
+            <p class="code">
+              6 * 9;<br />
+              6 - 9;<br />
+              6 / 9;
+            </p>
+            <p>
+              <b>Присвоєння</b><br />Використовується для присвоєння змінній
+              значення
+              <br />
+              Символ: =
+            </p>
+            <p class="code">var myVariable = "Bob";</p>
+            <p>
+              <b>== (оператор нестрогого рівняння):</b> порівнює значення без
+              звертання до типів даних. JavaScript може провести автоматичне
+              приведення типів, якщо типи операндів відрізняються.
+              <br />Приклад:
+            </p>
+            <p class="code">
+              5 == "5" // true, тому що JavaScript автоматично перетворює рядок
+              в число для порівняння
+            </p>
+            <p>
+              <b>Дорівнює(оператор строгого рівняння)</b><br />Використовується
+              для перевірки двох значень на рівність. Повертає
+              true/false(Boolean).Воно не проводить автоматичне приведення
+              типів, і обидва операнди повинні бути одного і того ж типу для
+              отримання true.
+              <br />
+              Символ: ===
+            </p>
+            <p class="code">
+              var myVariable = 3; <br />myVariable === 4;<br />false;
+            </p>
+            <h2 class="block-header">Логічні оператори</h2>
+            <img
+              src="./img/JavaScript-Logical-Operators.webp"
+              alt="logical operators"
+              class="img"
+            />
+            <p>
+              <b>Заперечення</b><br />Повертає логічно протилежне значення, яке
+              йому передує; перетворює true в false і таке інше. Коли
+              використовується разом з оператором рівності, оператор заперечення
+              перевіряє, чи два значення не є рівними.
+              <br />
+              Символ: !, ==!
+            </p>
+            <p>
+              Основний вираз - true, але порівняння повертає false, оскільки ми
+              його заперечуємо:
+            </p>
+            <p class="code">
+              var myVariable = 3;<br />
+              !(myVariable === 3);<br />false
+            </p>
+            <p>
+              Тут ми перевіряємо "myVariable НЕ рівно 3". Це повертає false,
+              оскільки myVariable рівне 3.
+            </p>
+            <p class="code">
+              var myVariable = 3;<br />
+              myVariable !== 3;<br />
+              false
+            </p>
+            <p>
+              <b>Примітка:</b><br />
+              Змішування типів даних може призвести до деяких неочікуваних
+              результатів при виконанні обчислень, тому будьте обережні,
+              правильно посилаючись на ваші змінні, щоб отримувати очікувані
+              результати. Наприклад, введіть "35" + "25" у вашу консоль. Чому ви
+              не отримали результат, який очікували? Тому що лапки перетворили
+              числа на рядки, отже, вас насправді чекає конкатенація рядків, а
+              не додавання чисел. Якщо ви введете 35 + 25, то отримаєте
+              правильний результат.
+            </p>
+
+            <p>
+              <b>Логічний оператор "або"</b><br />в JavaScript представлений
+              символом ||. Використовується для виразів, що повертають true,
+              якщо хоча б один із умов вираження є true.
+            </p>
+            <p class="code">var result = (5 > 3) || (10 < 5); <br />true</p>
+            <p>
+              <b>Логічний оператор "і"</b><br />в JavaScript представлений
+              символом &&. Використовується для виразів, що повертають true,
+              лише якщо обидві умови вираження є true.
+            </p>
+            <p class="code">var result = (5 > 3) && (10 < 5); <br />false</p>
             <div class="test-wrap">
               <form class="quiz-form" id="quizForm">
                 <fieldset class="quiz-fieldset">
                   <div class="quiz-wrap-set">
-                    <p>
-                      1. Яка мова програмування використовується для розробки
-                      веб-сайтів?
-                    </p>
+                    <p>1. Що означає символ "+" в JS?</p>
                     <label class="quiz-label"
-                      ><input type="radio" name="q1" value="True" checked />
-                      Java</label
+                      ><input type="radio" name="q1" value="True" checked /> Не
+                      має призначення</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q1" value="True" />
-                      Python</label
+                      Порівняння</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q1" value="true" />
-                      JavaScript</label
+                      Конкантинацію</label
                     >
                   </div>
 
                   <div class="quiz-wrap-set">
-                    <p>2. Що означає абревіатура HTML?</p>
+                    <p>2. Тип даних, що має тільки значення true і false?</p>
                     <label class="quiz-label"
-                      ><input type="radio" name="q2" value="true" checked />
-                      HyperText Markup Language</label
+                      ><input type="radio" name="q2" value="True" checked />
+                      string</label
                     >
                     <label class="quiz-label"
-                      ><input type="radio" name="q2" value="True" /> High-level
-                      Text Modeling Language</label
+                      ><input type="radio" name="q2" value="true" />
+                      boolean</label
                     >
                     <label class="quiz-label"
-                      ><input type="radio" name="q2" value="True" /> Hyperlink
-                      and Text Markup Language</label
-                    >
+                      ><input type="radio" name="q2" value="True" /> object
+                    </label>
                   </div>
 
                   <div class="quiz-wrap-set">
-                    <p>3. Якій країні належить мова програмування Ruby?</p>
+                    <p>
+                      3. Яке значення отримаємо провівши таку операцію "35"+
+                      "25"?
+                    </p>
                     <label class="quiz-label"
                       ><input type="radio" name="q3" value="true" checked />
-                      Японія</label
+                      3525</label
                     >
                     <label class="quiz-label"
-                      ><input type="radio" name="q3" value="True" /> Сполучені
-                      Штати Америки</label
+                      ><input type="radio" name="q3" value="True" /> 60</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q3" value="True" />
-                      Канада</label
+                      Помилку</label
                     >
                   </div>
                 </fieldset>
@@ -190,121 +319,230 @@
       <section class="second-section" id="section-2">
         <div class="container visually-hidden" id="second-section">
           <div class="section-wrap">
-            <h2 class="section-header">Section#2</h2>
+            <h2 class="section-header">Section #2 Умовне розгалуження</h2>
+            <img src="./img/if-else.jpg" alt="if else operators" class="img" />
             <p>
-              Lorem ipsum dojlor sit amet consectetur, adipisicing elit. Tenetur
-              odit quidem ratione sequi, velit laudantium eligendi sit ducimus
-              accusamus cumque quod ex totam sunt nostrum nisi repudiandae,
-              soluta architecto quae! Voluptate, molestias. Repellendus, nisi
-              non reiciendis illum provident cupiditate similique tempore est
-              quos debitis, deleniti unde deserunt illo iusto saepe ad autem
-              accusamus tenetur eum natus. Adipisci molestias optio iste? Sit
-              itaque doloribus eos iusto porro velit debitis voluptates facere
-              at? Doloremque sit sed consequatur recusandae quasi reiciendis
-              fugit dolores excepturi eveniet aspernatur omnis nulla, itaque
-              sequi doloribus dicta obcaecati? Nihil molestiae ea modi dolor
-              asperiores accusamus maxime quibusdam consequatur obcaecati,
-              repellendus atque tenetur reiciendis iure incidunt ab eum hic
-              possimus necessitatibus debitis. Corrupti iste a ad beatae cumque
-              labore! Inventore iure adipisci praesentium odit quasi. Nulla
-              repellendus consectetur nihil fugit, sint saepe similique soluta
-              beatae praesentium maxime sapiente laboriosam eveniet vitae aut
-              exercitationem a, eos in sed numquam impedit. Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Tenetur odit quidem
-              ratione sequi, velit laudantium eligendi sit ducimus accusamus
-              cumque quod ex totam sunt nostrum nisi repudiandae, soluta
-              architecto quae! Voluptate, molestias. Repellendus, nisi non
-              reiciendis illum provident cupiditate similique tempore est quos
-              debitis, deleniti unde deserunt illo iusto saepe ad autem
-              accusamus tenetur eum natus. Adipisci molestias optio iste? Sit
-              itaque doloribus eos iusto porro velit debitis voluptates facere
-              at? Doloremque sit sed consequatur recusandae quasi reiciendis
-              fugit dolores excepturi eveniet aspernatur omnis nulla, itaque
-              sequi doloribus dicta obcaecati? Nihil molestiae ea modi dolor
-              asperiores accusamus maxime quibusdam consequatur obcaecati,
-              repellendus atque tenetur reiciendis iure incidunt ab eum hic
-              possimus necessitatibus debitis. Corrupti iste a ad beatae cumque
-              labore! Inventore iure adipisci praesentium odit quasi. Nulla
-              repellendus consectetur nihil fugit, sint saepe similique soluta
-              beatae praesentium maxime sapiente laboriosam eveniet vitae aut
-              exercitationem a, eos in sed numquam impedit.
+              <b>Умови</b> <br />
+              Це конструкції в коді, які дозволяють перевірити, чи є вираз
+              істинним чи хибним, і виконати інший код залежно від отриманого
+              результату. Найбільш розповсюдженою формою умови є конструкція if
+              ... else.
+            </p>
+
+            <p class="code">
+              var iceCream = "chocolate"; <br />
+              if (iceCream === "chocolate") {<br />
+              alert("Yay, I love chocolate ice cream!");<br />
+              } else {<br />
+              alert("Awwww, but chocolate is my favorite...");<br />
+              }
+            </p>
+            <p>
+              Вираз всередині if ( ... ) — це перевірка, яка використовує
+              оператор строгого рівності (як описано вище), щоб порівняти змінну
+              iceCream із рядком "chocolate" і перевірити, чи вони ідентичні.
+              Якщо це порівняння повертає true, виконується перший блок коду. В
+              іншому випадку цей код пропускається, і виконується другий блок
+              коду після інструкції else.
+            </p>
+            <p>
+              Якщо вираз всередині if буде дорівнювати нулю або одиниці, то цей
+              блок не буде виконуватись ніколи, або ж навпки буде робити це
+              завжди
+            </p>
+            <p class="code">
+              if (0) { // 0 is falsy <br />
+              ... <br />
+              }
+            </p>
+            <p class="code">
+              if (1) { // 1 is truthy <br />
+              ... <br />
+              } <br />
+            </p>
+            <h2 class="block-header">Блок "else"</h2>
+            <p>
+              Інструкція if може містити необов'язковий блок "else" (інакше).
+              Цей блок виконується, коли умова if є хибною (false).
+            </p>
+            <p class="code">
+              if (age > 18) {<br />
+              accessAllowed = true;<br />
+              } else {<br />
+              accessAllowed = false;<br />
+              }
+            </p>
+            <p>
+              Деколи важливо перевірити кілька варіантів умови. Для цього
+              використовується блок else if.
+            </p>
+            <p class="code">
+              var score = 75;<br />
+              <br />
+              if (score >= 90) {<br />
+              console.log("Відмінно"); <br />
+              } else if (score >= 70) {<br />
+              console.log("Добре");<br />
+              } else if (score >= 50) {<br />
+              console.log("Задовільно");<br />
+              } else {<br />
+              console.log("Незадовільно");<br />
+              }
             </p>
             <div type="button" class="quiz-wrap" id="test_1"></div>
             <button id="button1" class="main-button check-button">
               Перевірити
             </button>
+            <h2 class="block-header">Цикли</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              cupiditate exercitationem sit officiis fuga error mollitia
-              accusantium nesciunt inventore, cum repudiandae, libero sequi
-              quibusdam eaque laudantium! Sunt repellat in omnis? Similique
-              nihil accusantium tenetur fuga dolorem id quasi excepturi quos eum
-              vero atque suscipit nesciunt, numquam veniam reiciendis ea iste
-              pariatur quas nemo deleniti vel unde sed asperiores. Consequuntur,
-              maxime! Autem eos nihil iste beatae natus? Officia esse ea, sit,
-              in quod a repudiandae facere corrupti dolores eaque quaerat amet
-              est voluptates dicta. Repudiandae similique minima eligendi natus
-              qui aliquid! Veniam voluptatibus sint enim qui mollitia tempore
-              molestiae commodi nemo eum aliquid repellendus dignissimos
-              explicabo quisquam, corporis, quod modi. Consectetur voluptas quis
-              dolor delectus sapiente corporis culpa? Dolore, error assumenda.
-              Facere impedit consequuntur dignissimos reprehenderit inventore.
-              Similique exercitationem qui quos repellendus obcaecati, expedita
-              voluptate necessitatibus sunt rem aliquam aut temporibus nostrum
-              dignissimos dolorum illo quasi architecto impedit reiciendis nihil
-              beatae?
+              У JavaScript існують різні види циклів, такі як for, while, і
+              do...while, які дозволяють вам виконувати блок коду кілька разів.
+              Цикли зручні, якщо ви хочете запускати один і той самий код знову
+              і знову, кожен раз з іншим значенням.
             </p>
+            <img src="./img/loops.jpg" alt="loops" class="img" />
+            <p>
+              <b>Цикл «while»</b><br />У цьому циклі, блок коду буде
+              виконуватися, доки умова залишається істинною. У разі, якщо умова
+              вже на початку не є істинною, блок коду не виконається жодного
+              разу. <br />Цикл while має наступний синтаксис:
+            </p>
+            <p class="code">
+              while (condition) { <br />
+              // код <br />
+              }
+            </p>
+            <p>
+              Код з тіла циклу виконується, поки умова condition є істинною.
+            </p>
+            <p class="code">
+              let i = 0; <br />
+              while (i < 3) { // выводит 0, затем 1, затем 2 <br />
+              alert( i ); <br />
+              i++; <br />
+              }
+            </p>
+            <p>
+              Один виклик тіла циклу у наукових термінах називається ітерацією.
+              У цьому циклі, зазначеному вище, здійснюється три ітерації. <br />
+
+              Якщо б рядок i++ був відсутній у вищенаведеному прикладі, то цей
+              цикл, в теорії, виконувався б безкінечно. На практиці, звісно,
+              браузер не дозволить цьому відбутися і надасть користувачеві
+              можливість зупинити «завислий» скрипт, а JavaScript на сервері
+              доведеться припинити процес. <br />
+
+              Будь-який вираз чи змінна може бути умовою циклу, не лише
+              порівняння: умова циклу while обчислюється і перетворюється в
+              логічне значення.
+            </p>
+            <p>
+              <b>Цикл "do...while"</b><br />
+              Перевірку умови можна розмістити під тілом циклу, використовуючи
+              спеціальний синтаксис do...while:
+            </p>
+            <p class="code">
+              do { <br />
+              // тіло цикла <br />
+              } while (condition);
+            </p>
+            <p>
+              Цикл спочатку виконає тіло, а потім перевірить умову condition, і
+              доки її значення рівне true, він буде виконуватись знову і знову.
+              <br />
+              Наприклад:
+            </p>
+            <p class="code">
+              let i = 0; <br />
+              do {<br />
+              alert( i ); <br />
+              i++; <br />
+              } while (i < 3);
+            </p>
+            <p>
+              Такий синтаксис виправданий, якщо ви хочете, щоб тіло циклу
+              виконалося хоча б один раз, навіть якщо умова виявиться хибною. На
+              практиці, частіше використовується форма з передумовою: while
+              (...) { ... }.
+            </p>
+            <p>
+              <b>Цикл "for"</b><br />Більш складний, але при цьому
+              найпоширеніший цикл - це цикл `for`. Виглядає він наступним чином:
+            </p>
+            <p class="code">
+              for (початок; умова; крок) { <br />
+              // ... тіло циклу ... <br />
+              }
+            </p>
+            <p>
+              Давайте проаналізуємо кожну частину на прикладі. У цьому циклі
+              викликається alert(i) для i від 0 до (не включаючи) 3:
+            </p>
+            <p class="code">
+              for (let i = 0; i < 3; i++) { <br />
+              alert(i); <br />
+              }
+            </p>
+            <p>Всього ми розглянули 3 типи циклів:</p>
+            <ul>
+              <li>while: Перевіряє умову перед кожною ітерацією.</li>
+              <li>do..while: Перевіряє умову після кожної ітерації.</li>
+              <li>
+                for: Перевіряє умову перед кожною ітерацією і надає можливість
+                задати додаткові налаштування.
+              </li>
+            </ul>
             <div class="test-wrap">
               <form class="quiz-form" id="quizForm1">
                 <fieldset class="quiz-fieldset">
                   <div class="quiz-wrap-set">
                     <p>
-                      1. Яка мова програмування використовується для розробки
-                      веб-сайтів?
+                      1. Скільки разів виконається блок коду в циклі do...while,
+                      якщо умова false?
                     </p>
                     <label class="quiz-label"
                       ><input type="radio" name="q1" value="True" checked />
-                      Java</label
+                      0</label
                     >
                     <label class="quiz-label"
-                      ><input type="radio" name="q1" value="True" />
-                      Python</label
+                      ><input type="radio" name="q1" value="true" /> 1</label
                     >
                     <label class="quiz-label"
-                      ><input type="radio" name="q1" value="true" />
-                      JavaScript</label
+                      ><input type="radio" name="q1" value="True" /> 2</label
                     >
                   </div>
 
                   <div class="quiz-wrap-set">
-                    <p>2. Що означає абревіатура HTML?</p>
+                    <p>2. Один виклик тіла циклу називається?</p>
                     <label class="quiz-label"
                       ><input type="radio" name="q2" value="true" checked />
-                      HyperText Markup Language</label
-                    >
-                    <label class="quiz-label"
-                      ><input type="radio" name="q2" value="True" /> Мова
-                      високого рівня для моделювання тексту</label
+                      Конкантинація</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q2" value="True" />
-                      Гіперпосилання та мова розмітки тексту</label
+                      Ітерація</label
                     >
+                    <label class="quiz-label"
+                      ><input type="radio" name="q2" value="True" /> Імплікація
+                    </label>
                   </div>
 
                   <div class="quiz-wrap-set">
-                    <p>3. Якій країні належить мова програмування Ruby?</p>
+                    <p>
+                      3. Який тип циклу перевіряє умову перед кожною ітерацією і
+                      дозволяє встановлювати додаткові параметри?
+                    </p>
                     <label class="quiz-label"
                       ><input type="radio" name="q3" value="true" checked />
-                      Японія</label
+                      for</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q3" value="True" /> Сполучені
-                      Штати Америки</label
+                      while</label
                     >
                     <label class="quiz-label"
                       ><input type="radio" name="q3" value="True" />
-                      Канада</label
+                      do..while</label
                     >
                   </div>
                 </fieldset>
@@ -330,198 +568,218 @@
             <form class="quiz-form" id="quizForm2">
               <fieldset class="quiz-fieldset">
                 <div class="quiz-wrap-set">
-                  <p>
-                    1. Яка мова програмування використовується для розробки
-                    веб-сайтів?
-                  </p>
+                  <p>1. Як оголосити змінну в JavaScript?</p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q1" value="true" checked />
+                    ><input type="radio" name="q1" value="True" checked />
                     Java</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q1" value="True" /> Python</label
+                    ><input type="radio" name="q1" value="true" /> var x</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q1" value="True" />
-                    JavaScript</label
+                    ><input type="radio" name="q1" value="True" /> x =
+                    var;</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
-                  <p>2. Що означає абревіатура HTML?</p>
+                  <p>
+                    2. Як строго перевірити, чи рівні два значення в
+                    JavaScript??
+                  </p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q2" value="true" checked />
-                    HyperText Markup Language</label
+                    ><input type="radio" name="q2" value="true" checked /> x ===
+                    y;</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q2" value="True" /> Мова високого
-                    рівня для моделювання тексту</label
+                    ><input type="radio" name="q2" value="True" /> x = y;</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q2" value="True" />
-                    Гіперпосилання та мова розмітки тексту</label
+                    ><input type="radio" name="q2" value="True" /> x ==
+                    y;</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
-                  <p>3. Якій країні належить мова програмування Ruby?</p>
+                  <p>3. Як визначити логічну (булеву) змінну в JavaScript?</p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q3" value="true" checked />
-                    Японія</label
+                    ><input type="radio" name="q3" value="True" checked />
+                    boolean x = true;</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q3" value="True" /> Сполучені
-                    Штати Америки</label
+                    ><input type="radio" name="q3" value="True" />let x =
+                    "true";</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q3" value="True" /> Канада</label
+                    ><input type="radio" name="q3" value="true" /> let x =
+                    true;</label
                   >
                 </div>
                 <div class="quiz-wrap-set">
-                  <p>4. Призначення мови програмування C++?</p>
+                  <p>
+                    4. Яким буде тип даних у змінної, якщо ви напишете typeof
+                    myVar;, де myVar - це число?
+                  </p>
                   <label class="quiz-label"
                     ><input type="radio" name="q4" value="true" checked />
-                    Розробка системного програмного забезпечення</label
+                    number</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q4" value="True" /> string</label
                   >
                   <label class="quiz-label"
                     ><input type="radio" name="q4" value="True" />
-                    Веб-розробка</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q4" value="True" /> Штучний
-                    інтелект</label
-                  >
-                </div>
-
-                <div class="quiz-wrap-set">
-                  <p>5. Що означає CSS?</p>
-                  <label class="quiz-label"
-                    ><input type="radio" name="q5" value="true" checked />
-                    Cascading Style Sheets</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q5" value="True" /> Computer
-                    Style System</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q5" value="True" /> Creative
-                    Styling Software</label
-                  >
-                </div>
-
-                <div class="quiz-wrap-set">
-                  <p>6. Коли був створений мовою програмування Python?</p>
-                  <label class="quiz-label"
-                    ><input type="radio" name="q6" value="true" checked />
-                    1989</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q6" value="True" /> 2005</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q6" value="True" /> 1995</label
+                    boolean</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
                   <p>
-                    7. Яка мова використовується для роботи з базами даних у
-                    веб-розробці?
+                    5. Який тип даних використовується для зберігання цілих
+                    чисел в JavaScript?
                   </p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q7" value="true" checked />
-                    SQL</label
+                    ><input type="radio" name="q5" value="True" checked />
+                    float</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q7" value="True" /> Java</label
+                    ><input type="radio" name="q5" value="True" /> int</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q7" value="True" /> Ruby</label
+                    ><input type="radio" name="q5" value="true" /> number</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
                   <p>
-                    8. Як називається найбільш популярний фреймворк для розробки
-                    веб-додатків на мові JavaScript?
+                    6. Які з наступних операторів використовуються для логічного
+                    "І" в JavaScript?
                   </p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q8" value="true" checked />
-                    React</label
+                    ><input type="radio" name="q6" value="True" checked />
+                    ||</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q8" value="True" /> Django</label
+                    ><input type="radio" name="q6" value="true" /> &&</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q8" value="True" /> Spring</label
+                    ><input type="radio" name="q6" value="True" /> !</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
                   <p>
-                    9. Яка мова використовується для розробки мобільних додатків
-                    для iOS?
+                    7. Яка різниця між == та === в операторах порівняння в
+                    JavaScript?
                   </p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q9" value="true" checked />
-                    Swift</label
+                    ><input type="radio" name="q7" value="True" checked /> ==
+                    порівнює значення та типи даних разом, === порівнює значення
+                    без звертання до типів даних.</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q9" value="True" /> Kotlin</label
+                    ><input type="radio" name="q7" value="True" /> Обидва
+                    оператори роблять однакове порівняння.</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q9" value="True" />
-                    Objective-C</label
-                  >
-                </div>
-
-                <div class="quiz-wrap-set">
-                  <p>10. Що означає абревіатура AJAX у веб-розробці?</p>
-                  <label class="quiz-label"
-                    ><input type="radio" name="q10" value="true" checked />
-                    Asynchronous JavaScript and XML</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q10" value="True" /> Advanced
-                    Java and XML</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q10" value="True" /> Accelerated
-                    JavaScript and XHTML</label
-                  >
-                </div>
-
-                <div class="quiz-wrap-set">
-                  <p>11. Яка основна функція мови програмування PHP?</p>
-                  <label class="quiz-label"
-                    ><input type="radio" name="q11" value="true" checked />
-                    Обробка даних на стороні сервера</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q11" value="True" /> Робота з
-                    графікою та дизайном</label
-                  >
-                  <label class="quiz-label"
-                    ><input type="radio" name="q11" value="True" /> Розробка
-                    мобільних додатків</label
+                    ><input type="radio" name="q7" value="true" /> == порівнює
+                    значення без звертання до типів даних, === порівнює значення
+                    та типи даних разом.</label
                   >
                 </div>
 
                 <div class="quiz-wrap-set">
                   <p>
-                    12. Як називається система контролю версій, часто
-                    використовувана в розробці програмного забезпечення?
+                    8. Як перевірити, чи виконуються обидві умови: x менше y і y
+                    менше z ?
                   </p>
                   <label class="quiz-label"
-                    ><input type="radio" name="q12" value="true" checked />
-                    Git</label
+                    ><input type="radio" name="q8" value="True" checked /> if (x
+                    < y || y < z) { /* код */ }</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q12" value="True" /> SVN</label
+                    ><input type="radio" name="q8" value="true" /> if (x < y &&
+                    y < z) { /* код */ }</label
                   >
                   <label class="quiz-label"
-                    ><input type="radio" name="q12" value="True" />
-                    Mercurial</label
+                    ><input type="radio" name="q8" value="True" /> if (x < y and
+                    y < z) { /* код */ }</label
+                  >
+                </div>
+
+                <div class="quiz-wrap-set">
+                  <p>
+                    9. Як виглядає умова в if, яка виконає код, якщо змінна
+                    temperature більше або рівна 25 градусам??
+                  </p>
+                  <label class="quiz-label"
+                    ><input type="radio" name="q9" value="True" checked /> if
+                    temperature >= 25 { ... }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q9" value="true" /> if
+                    (temperature >= 25) { ... }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q9" value="True" /> if
+                    (temperature > 25) { ... }</label
+                  >
+                </div>
+
+                <div class="quiz-wrap-set">
+                  <p>
+                    10. Як вивести числа від 1 до 5 включно за допомогою циклу
+                    for в JavaScript?
+                  </p>
+                  <label class="quiz-label"
+                    ><input type="radio" name="q10" value="True" checked /> for
+                    (let i = 1; i < 5; i++) { console.log(i); }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q10" value="true" /> for (let i =
+                    1; i <= 5; i++) { console.log(i); }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q10" value="True" /> for (let i =
+                    5; i >= 1; i--) { console.log(i); }</label
+                  >
+                </div>
+
+                <div class="quiz-wrap-set">
+                  <p>
+                    11. Як використовувати цикл while для виведення парних чисел
+                    від 2 до 10 включно в JavaScript?
+                  </p>
+                  <label class="quiz-label"
+                    ><input type="radio" name="q11" value="true" checked /> let
+                    i = 2; while (i <= 10) { console.log(i); i += 2; }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q11" value="True" /> let i = 10;
+                    while (i >= 2) { console.log(i); i -= 2; }</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q11" value="True" /> let i = 2;
+                    while (i < 10) { console.log(i); i++; }</label
+                  >
+                </div>
+
+                <div class="quiz-wrap-set">
+                  <p>
+                    12.Як використовувати цикл do...while для виведення чисел
+                    від 1 до 3 включно в JavaScript?
+                  </p>
+                  <label class="quiz-label"
+                    ><input type="radio" name="q12" value="True" checked /> let
+                    i = 1; do { console.log(i); i--; } while (i >= 3);</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q12" value="true" /> let i = 1;
+                    do { console.log(i); i++; } while (i <= 3);</label
+                  >
+                  <label class="quiz-label"
+                    ><input type="radio" name="q12" value="True" /> let i = 3;
+                    do { console.log(i); i--; } while (i > 0);</label
                   >
                 </div>
               </fieldset>

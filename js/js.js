@@ -22,30 +22,30 @@ document.getElementById("module-butt").addEventListener("click", function () {
 });
 let questions1 = [
   {
-    text: "Скорочена  назва таблиці стилів?",
-    right: "CSS",
+    text: "Скорочена назва мови програмування JavaScript?",
+    right: "JS",
   },
   {
-    text: "Хто верстає сайти?",
-    right: "верстальник",
+    text: "Контейнери, всередині яких ви можете зберігати значення - це?",
+    right: "Змінні",
   },
   {
-    text: "Найпопулярніший CSS-фреймворк?",
-    right: "Bootstrap",
+    text: "Який оператор присвоєння в мові JavaScript?",
+    right: "=",
   },
 ];
 let questions2 = [
   {
-    text: "Як перекладається аббревіатура HTML?",
-    right: "Гіпертекстова Мова Розмітки",
+    text: "Конструкція, що дозволяє перевірити, чи є вираз істинним чи хибним?",
+    right: "if",
   },
   {
-    text: "Хто розробляє дизайн сайту?",
-    right: "дизайнер",
+    text: "Який необов'язковий блок може містити інструкція if?",
+    right: "else",
   },
   {
-    text: "Яка мова програмування ?",
-    right: "JavaScript",
+    text: "Чи виконається умова при виразі в if - !true? 'Так' або 'Ні'",
+    right: "Ні",
   },
 ];
 /*============================Test==========================*/
@@ -80,14 +80,15 @@ function checkAnswers(container, inputClass) {
     input.classList.remove("incorrect");
 
     if (input.value === "") {
-      //!!!!!!!!!!!!
+      input.classList.add("incorrect");
+      input.readOnly = true;
     } else if (input.value == input.dataset.right) {
       input.classList.add("correct");
       score++;
-      input.disabled = true;
+      input.readOnly = true;
     } else {
       input.classList.add("incorrect");
-      input.disabled = true;
+      input.readOnly = true;
     }
   }
 }
