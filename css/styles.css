@@ -176,9 +176,9 @@ ul {
   /* align-items: center; */
   margin: 15px 0;
 }
-.quiz-wrap > div {
+/* .quiz-wrap > div {
   margin-left: 200px;
-}
+} */
 .test-button {
   display: inline-block;
   font-weight: 400;

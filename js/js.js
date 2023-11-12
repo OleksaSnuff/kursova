@@ -23,14 +23,14 @@ document.getElementById("module-butt").addEventListener("click", function () {
 let questions1 = [
   {
     text: "Скорочена назва мови програмування JavaScript?",
-    right: "JS",
+    right: "js",
   },
   {
     text: "Контейнери, всередині яких ви можете зберігати значення - це?",
-    right: "Змінні",
+    right: "змінні",
   },
   {
-    text: "Який оператор присвоєння в мові JavaScript?",
+    text: "Який оператор(символ) присвоєння в мові JavaScript?",
     right: "=",
   },
 ];
@@ -45,7 +45,7 @@ let questions2 = [
   },
   {
     text: "Чи виконається умова при виразі в if - !true? 'Так' або 'Ні'",
-    right: "Ні",
+    right: "ні",
   },
 ];
 /*============================Test==========================*/
@@ -60,7 +60,6 @@ function generateTestBlock(container, questions, inputClass, buttonSelector) {
 
     let input = document.createElement("input");
     input.classList.add(inputClass);
-    input.setAttribute("required", true);
     input.dataset.right = question.right;
     div.appendChild(input);
   }
@@ -76,13 +75,10 @@ function checkAnswers(container, inputClass) {
   let inputs = container.querySelectorAll(`.${inputClass}`);
 
   for (let input of inputs) {
-    input.classList.remove("correct");
-    input.classList.remove("incorrect");
-
     if (input.value === "") {
       input.classList.add("incorrect");
       input.readOnly = true;
-    } else if (input.value == input.dataset.right) {
+    } else if (input.value.toLowerCase() == input.dataset.right) {
       input.classList.add("correct");
       score++;
       input.readOnly = true;
@@ -132,4 +128,163 @@ document.getElementById("close-modal").addEventListener("click", function () {
 function reload() {
   score = 0;
   location.reload();
+}
+/* module controle */
+
+let questions3 = [
+  {
+    text: "Як оголосити змінну в JavaScript?",
+    q1: "x == var;",
+    q2: "var x;",
+    q3: "x = var;",
+    right: "var x;",
+  },
+  {
+    text: "Як строго перевірити, чи рівні два значення в JavaScript?",
+    q1: "x === y;",
+    q2: "x = y;",
+    q3: "x == y;",
+    right: "x === y;",
+  },
+  {
+    text: "Як визначити логічну (булеву) змінну в JavaScript?",
+    q1: "boolean x = true;",
+    q2: "let x = 'true';",
+    q3: "let x = true;",
+    right: "let x = true;",
+  },
+  {
+    text: "Яким буде тип даних у змінної, якщо ви напишете typeof myVar;, де myVar - це число?",
+    q1: "string",
+    q2: "number",
+    q3: "boolean",
+    right: "number",
+  },
+  {
+    text: "Який тип даних використовується для зберігання цілих чисел в JavaScript?",
+    q1: "float",
+    q2: "int;",
+    q3: "number",
+    right: "number",
+  },
+  {
+    text: "Які з наступних операторів використовуються для логічного 'I' в JavaScript?",
+    q1: "||",
+    q2: "&&",
+    q3: "!",
+    right: "&&",
+  },
+  {
+    text: "Яка різниця між == та === в операторах порівняння в JavaScript?",
+    q1: "== порівнює значення та типи даних разом, === порівнює значення без звертання до типів даних.",
+    q2: "Обидва oператори роблять однакове порівняння.",
+    q3: "== порівнює значення без звертання до типів даних, === порівнює значення та типи даних разом.",
+    right:
+      "== порівнює значення без звертання до типів даних, === порівнює значення та типи даних разом.",
+  },
+  {
+    text: "Як перевірити, чи виконуються обидві умови: x менше y і y менше z ?",
+    q1: "if (x < y || y < z) { /* код */ }",
+    q2: "if (x < y && y < z) { /* код */ }",
+    q3: "if (x < y and y < z) { /* код */ }",
+    right: "if (x < y && y < z) { /* код */ }",
+  },
+  {
+    text: "Як виглядає умова в if, яка виконає код, якщо змінна temperature більше або рівна 25 градусам?",
+    q1: "if temperature >= 25 { ... }",
+    q2: "if (temperature >= 25) { ... }",
+    q3: "if (temperature > 25) { ... }",
+    right: "if (temperature >= 25) { ... }",
+  },
+  {
+    text: "Як вивести числа від 1 до 5 включно за допомогою циклу for в JavaScript?",
+    q1: "for (let i = 1; i < 5; i++) { console.log(i); }",
+    q2: "for (let i = 1; i <= 5; i++) { console.log(i); }",
+    q3: "for (let i = 5; i >= 1; i--) { console.log(i); }",
+    right: "for (let i = 1; i <= 5; i++) { console.log(i); }",
+  },
+  {
+    text: "Як використовувати цикл while для виведення парних чисел від 2 до 10 включно в JavaScript?",
+    q1: "let i = 2; while (i <= 10) { console.log(i); i += 2; }",
+    q2: "let i = 2; while (i < 10) { console.log(i); i++; }",
+    q3: "let i = 10; while (i >= 2) { console.log(i); i -= 2; }",
+    right: "let i = 2; while (i <= 10) { console.log(i); i += 2; }",
+  },
+  {
+    text: "Як використовувати цикл do...while для виведення чисел від 1 до 3 включно в JavaScript?",
+    q1: "let i = 1; do { console.log(i); i--; } while (i >= 3);",
+    q2: "let i = 1; do { console.log(i); i++; } while (i <= 3);",
+    q3: "let i = 3; do { console.log(i); i--; } while (i > 0);",
+    right: "let i = 1; do { console.log(i); i++; } while (i <= 3);",
+  },
+];
+
+function shuffleQuestions(questions) {
+  let shuffledQuestions = [...questions];
+
+  for (let i = shuffledQuestions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledQuestions[i], shuffledQuestions[j]] = [
+      shuffledQuestions[j],
+      shuffledQuestions[i],
+    ];
+  }
+
+  return shuffledQuestions;
+}
+let shufQuestions = shuffleQuestions(questions3);
+generateTestModule(test_module, shufQuestions, "quiz-label");
+
+function generateTestModule(container, questions, inputClass) {
+  let j = 1;
+  for (let question of questions) {
+    let div = document.createElement("div");
+    div.classList.add("quiz-wrap-set");
+    container.appendChild(div);
+
+    let p = document.createElement("p");
+    p.innerHTML = question.text;
+    div.appendChild(p);
+
+    for (let i = 1; i <= 3; i++) {
+      let label = document.createElement("label");
+      label.classList.add(inputClass);
+
+      let input = document.createElement("input");
+      input.type = "radio";
+      input.name = "q" + j;
+      input.value = question["q" + i];
+      if (i == 1) input.setAttribute("checked", true);
+      label.appendChild(input);
+
+      label.innerHTML += " " + question["q" + i];
+
+      div.appendChild(label);
+    }
+    j++;
+  }
+}
+
+function submitModuleQuiz(formId) {
+  let questions = document.querySelectorAll(`form#${formId} .quiz-wrap-set`);
+  let i = 0;
+  questions.forEach((question) => {
+    let selectedOption = question.querySelector("input:checked");
+
+    if (selectedOption.value === shufQuestions[i].right) {
+      score++;
+      question.classList.add("correct");
+    } else {
+      question.classList.add("incorrect");
+    }
+
+    let inputs = question.querySelectorAll("input");
+    inputs.forEach((input) => {
+      input.disabled = true;
+    });
+    let callingButton = event.currentTarget;
+    callingButton.disabled = true;
+    i++;
+  });
+  document.getElementById("score").innerHTML = "SCORE: " + score;
 }
